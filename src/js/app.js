@@ -9,6 +9,8 @@ const miniText = document.querySelector(".mini_text");
 const infor = document.querySelector(".item");
 const buttonInlock = document.querySelector(".unlock");
 
+
+document.addEventListener('DOMContentLoaded', () => {
 h1.addEventListener("click", (e) => {
   e.preventDefault();
   console.log(miniText.classList.toggle("unvis"));
@@ -22,3 +24,4 @@ infor.addEventListener("mouseover", () => {
 infor.addEventListener("mouseout", () => {
   buttonInlock.classList.add("unvis");
 });
+})
