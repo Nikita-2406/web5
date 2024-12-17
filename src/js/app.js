@@ -1,20 +1,20 @@
+import "../css/style.css";
 
-
-const h1 = document.querySelector('.zagolovok')
-miniText = document.querySelector('.mini_text')
-const infor = document.querySelector(".item")
-const buttonInlock = document.querySelector('.unlock')
+const h1 = document.querySelector(".zagolovok");
+const miniText = document.querySelector(".mini_text");
+const infor = document.querySelector(".item");
+const buttonInlock = document.querySelector(".unlock");
 
 h1.addEventListener("click", (e) => {
-  e.preventDefault()
-  console.log(miniText.classList.toggle('unvis'))
+  e.preventDefault();
+  console.log(miniText.classList.toggle("unvis"));
   // miniText.classList.toogle("unvis")
-})
+});
 
 infor.addEventListener("mouseover", () => {
-  buttonInlock.classList.remove('unvis')
-})
+  buttonInlock.classList.remove("unvis");
+});
 
 infor.addEventListener("mouseout", () => {
-  buttonInlock.classList.add('unvis')
-})
+  buttonInlock.classList.add("unvis");
+});
