@@ -1,4 +1,8 @@
-import "../css/style.css";
+
+
+export function forTest () {
+  return 5
+}
 
 const h1 = document.querySelector(".zagolovok");
 const miniText = document.querySelector(".mini_text");
