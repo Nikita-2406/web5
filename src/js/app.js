@@ -1,11 +1,20 @@
-// TODO: write code here
 
-// comment this to pass build
-const unusedVariable = "variable";
 
-// for demonstration purpose only
-export default function demo(value) {
-  return `Demo: ${value}`;
-}
+const h1 = document.querySelector('.zagolovok')
+miniText = document.querySelector('.mini_text')
+const infor = document.querySelector(".item")
+const buttonInlock = document.querySelector('.unlock')
 
-console.log("app.js included");
+h1.addEventListener("click", (e) => {
+  e.preventDefault()
+  console.log(miniText.classList.toggle('unvis'))
+  // miniText.classList.toogle("unvis")
+})
+
+infor.addEventListener("mouseover", () => {
+  buttonInlock.classList.remove('unvis')
+})
+
+infor.addEventListener("mouseout", () => {
+  buttonInlock.classList.add('unvis')
+})
